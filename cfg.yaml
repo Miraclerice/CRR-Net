@@ -1,0 +1,28 @@
+CRR_Net:
+    # data parameters
+    train_dir: '/public/home/Anonymous author/LPBA40/Train/'
+    val_dir: '/public/home/Anonymous author/LPBA40/Val/'  
+    img_size: [160, 192, 160]
+    # training parameters
+    max_epoch: 30
+    epoch_start: 0
+    cont_training: False
+    batch_size: 1
+    lr: 0.0001
+    weights: [1, 1]
+    device: 'GPU'
+    gpu_id: 0
+    ckpt: 'experiments/CRR_Net/dsc0.740.pth.tar'
+    # network parameters
+    model_args:
+        # if not use **kwargs, please specify according to the number of network parameters
+        in_shape: [ 160, 192, 160 ]
+        in_channels: 1
+        feats: 8
+        calc_corr: True
+        corr_k: 3
+        use_frm: True
+        use_attn: True
+        cuda_acc: False
+        
+    log: False
