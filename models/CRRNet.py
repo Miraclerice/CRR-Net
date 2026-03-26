@@ -14,7 +14,7 @@ from functools import partial
 """
 SpatialTransformer, ResizeTransformerBlock, and VecIntBlock implement warping, upsamping, and integrating operations respectively.
 Original code sourced from: https://github.com/voxelmorph/voxelmorph/blob/dev/voxelmorph/nn/modules.py
-Modified and tested by: Anonymous author
+Modified and tested by: Bingxian Xie
 Orignal paper: 
 @article{balakrishnan2019voxelmorph,
   title={Voxelmorph: a learning framework for deformable medical image registration},
@@ -146,7 +146,7 @@ def voxel_shuffle(self: torch.Tensor, upscale_factor: int):
     """
     A 3D version for voxel rearrangement of correlation features
     Original code sourced from: https://github.com/pytorch/pytorch/blob/90618581e971d28ac6950305d72521af05ed3a42/torch/_refs/nn/functional/__init__.py#L1230-L1253
-    Modified and tested by: Anonymous author
+    Modified and tested by: Bingxian Xie
     Orignal paper: 
     @inproceedings{shi2016real,
         title={Real-time single image and video super-resolution using an efficient sub-pixel convolutional neural network},
@@ -287,7 +287,7 @@ class ChannelAttention(nn.Module):
     """
     Adapted the 2D channel attention mechanism to a 3D version for refining correaltion representtations
     Original code sourced from: https://github.com/Lose-Code/UBRFC-Net/blob/master/UBRFC/Attention.py
-    Modified and tested by: Anonymous author
+    Modified and tested by: Bingxian Xie
     Orignal paper: 
     @article{sun2024unsupervised,
         title={Unsupervised bidirectional contrastive reconstruction and adaptive fine-grained channel attention networks for image dehazing},
@@ -329,7 +329,7 @@ class SpatialAttention(nn.Module):
     """
     Adapted the 2D spatial attention mechanism to a 3D version for refining correaltion representtations
     Original code sourced from: https://github.com/HZAI-ZJNU/SCSA/blob/main/mmpretrain/models/attentions/SCSA.py
-    Modified and tested by: Anonymous author
+    Modified and tested by: Bingxian Xie
     Orignal paper: 
     @article{si2025scsa,
         title={SCSA: Exploring the synergistic effects between spatial and channel attention},
