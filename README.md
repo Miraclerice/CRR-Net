@@ -1,5 +1,5 @@
 ## CRR-Net: A Correlation Reconstruction and Refinement Network for Deformable Medical Image Registration
-Official Pytorch implementaion of CRR-Net: A Correlation Reconstruction and Refinement Network for Deformable Medical Image Registration.
+Official Pytorch implementaion of *CRR-Net: A Correlation Reconstruction and Refinement Network for Deformable Medical Image Registration*.
 
 <p align="center">
   <img src="assets/framework.png" width="800"/>
@@ -25,3 +25,6 @@ The code has been tested on python 3.8 and pytorch 1.12.1.
     ```shell
     sbatch infer.sh
     ```
+
+### Related Work
+For our ongoing work on 3D multimodal medical image registration, please follow the dedicated repository: [**DNAMorph**](https://github.com/miracledrumstick/DNAMorph).
