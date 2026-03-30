@@ -20,8 +20,8 @@ class LPBADataset(Dataset):
         y_idx = s + 1 if s >= x_idx else s
         path_x = self.paths[x_idx]
         path_y = self.paths[y_idx]
-        x, x_seg = pkl_loader(path_x)  # fixed image
-        y, y_seg = pkl_loader(path_y)  # moving image
+        x, x_seg = pkl_loader(path_x)
+        y, y_seg = pkl_loader(path_y)
         x, y = x[None, ...], y[None, ...]
         x, y = self.transforms([x, y])
         x = np.ascontiguousarray(x)
