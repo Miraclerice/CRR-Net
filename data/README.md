@@ -33,4 +33,4 @@ The paper reports the mean DSC for each ROI, averaged across all registration pa
 | **Temporal**          | Inferior temporal, middle temporal, superior temporal, transverse temporal (L/R)       | 1009, 1015, 1030, 1034, 2009, 2015, 2030, 2034             |
 | **Fusiform**          | Fusiform (L/R)                                                                         | 1007, 2007                                                 |
 
-For implementation details, please refer to the `Simple_Seg_norm` class in [trans.py](https://github.com/miracledrumstick/CRR-Net/blob/6e60710beefe62ad1c0ac2cad7768d1bc9a59a43/data/trans.py#L43).
+For implementation details, please refer to the `Simple_Seg_norm` class in [trans.py](https://github.com/miracledrumstick/CRR-Net/blob/main/data/trans.py#L43).
